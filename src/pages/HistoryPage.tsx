@@ -15,7 +15,7 @@ const HistoryPage = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-season", season);
-    document.title = "Our History — Methi PEFA Church";
+    document.title = "Our History — PEFA METHI CATHEDRAL BRANCH";
     supabase.from("church_history").select("full_history").limit(1).maybeSingle().then(({ data }) => setHistory(data ?? null));
     supabase.from("past_pastors").select("*").order("sort_order").then(({ data }) => setPastors((data as any) ?? []));
   }, [season]);

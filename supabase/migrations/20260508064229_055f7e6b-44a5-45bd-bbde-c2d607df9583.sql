@@ -246,14 +246,14 @@ VALUES (
 );
 
 INSERT INTO public.church_history (intro, full_history) VALUES (
-  'Methi PEFA Church was planted as a humble gathering of believers under a tree in Methi.',
-  'Methi PEFA Church was planted in the late 1970s as a humble gathering of believers under the wide branches of a tree in Methi. With prayer, song, and an unshakeable conviction in the gospel of Jesus Christ, the founding members began a work that would touch generations.
+  'PEFA METHI CATHEDRAL BRANCH was planted as a humble gathering of believers under a tree in Methi.',
+  'PEFA METHI CATHEDRAL BRANCH was planted in the late 1970s as a humble gathering of believers under the wide branches of a tree in Methi. With prayer, song, and an unshakeable conviction in the gospel of Jesus Christ, the founding members began a work that would touch generations.
 
 Affiliated with the Pentecostal Evangelistic Fellowship of Africa (PEFA), the local assembly has grown from a handful of faithful families to a vibrant, multi-generational congregation.'
 );
 
 INSERT INTO public.past_pastors (name, years, title, accomplishments, sort_order) VALUES
-('Bishop Ngure','1978 – 1995','Founding Bishop', ARRAY['Pioneered the planting of Methi PEFA Church.','Oversaw construction of the first sanctuary.','Established foundational discipleship programs.'], 1),
+('Bishop Ngure','1978 – 1995','Founding Bishop', ARRAY['Pioneered the planting of PEFA METHI CATHEDRAL BRANCH.','Oversaw construction of the first sanctuary.','Established foundational discipleship programs.'], 1),
 ('Rev. Joseph Kamau','1995 – 2008','Senior Pastor', ARRAY['Led the church through revival and growth.','Launched youth and women''s ministries.'], 2),
 ('Pastor Samuel Mwangi','2008 – 2017','Senior Pastor', ARRAY['Oversaw expansion of the main sanctuary.','Strengthened worship ministry.'], 3),
 ('Bishop David G. Nduati','2017 – Present','Presiding Bishop', ARRAY['Launched live-streaming and digital ministry.','Restructured the four core ministries.'], 4);

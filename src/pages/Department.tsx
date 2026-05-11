@@ -16,7 +16,7 @@ const Department = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-season", season);
-    if (dept) document.title = `${dept.name} — Methi PEFA Church`;
+    if (dept) document.title = `${dept.name} — PEFA METHI CATHEDRAL BRANCH`;
   }, [season, dept]);
 
   if (!dept) return <Navigate to="/" replace />;

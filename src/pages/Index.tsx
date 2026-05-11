@@ -21,8 +21,8 @@ const Index = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-season", season);
-    document.title = "Methi PEFA Church — A House of Worship & Welcome";
-    const desc = "Methi PEFA Church: Pentecostal worship, livestream services, ministries, devotionals, events and giving. Welcome home.";
+    document.title = "PEFA METHI CATHEDRAL BRANCH — A House of Worship & Welcome";
+    const desc = "PEFA METHI CATHEDRAL BRANCH: Pentecostal worship, livestream services, ministries, devotionals, events and giving. Welcome home.";
     let m = document.querySelector('meta[name="description"]');
     if (!m) { m = document.createElement("meta"); m.setAttribute("name", "description"); document.head.appendChild(m); }
     m.setAttribute("content", desc);

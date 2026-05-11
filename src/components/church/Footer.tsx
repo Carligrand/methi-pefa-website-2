@@ -9,7 +9,7 @@ export const Footer = () => (
             <Cross className="w-5 h-5 text-primary" />
           </div>
           <div>
-            <div className="font-display text-xl">Methi PEFA Church</div>
+            <div className="font-display text-xl">PEFA METHI CATHEDRAL BRANCH</div>
             <div className="text-xs uppercase tracking-widest text-accent">Pentecostal Evangelistic Fellowship of Africa</div>
           </div>
         </div>
@@ -36,7 +36,7 @@ export const Footer = () => (
       </div>
     </div>
     <div className="container max-w-6xl mt-12 pt-6 border-t border-primary-foreground/15 text-xs text-primary-foreground/60 flex flex-col sm:flex-row justify-between gap-2">
-      <p>© {new Date().getFullYear()} Methi PEFA Church. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} PEFA METHI CATHEDRAL BRANCH. All rights reserved.</p>
       <p>"For God so loved the world..." — John 3:16</p>
     </div>
   </footer>

@@ -28,7 +28,7 @@ const Sermons = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-season", season);
-    document.title = "Sermons Archive — Methi PEFA Church";
+    document.title = "Sermons Archive — PEFA METHI CATHEDRAL BRANCH";
     supabase.from("sermons").select("*").eq("published", true).order("preached_on", { ascending: false })
       .then(({ data }) => setList((data as any) ?? []));
   }, [season]);

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => (
   <section id="welcome" className="relative min-h-[92vh] flex items-center overflow-hidden">
-    <img src={hero} alt="Methi PEFA Church sanctuary" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
+    <img src={hero} alt="PEFA METHI CATHEDRAL BRANCH sanctuary" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
     <div className="absolute inset-0 bg-gradient-hero" />
     <div className="relative container py-24 text-primary-foreground">
       <div className="grid lg:grid-cols-[auto_1fr_auto] gap-10 lg:gap-14 items-center">
