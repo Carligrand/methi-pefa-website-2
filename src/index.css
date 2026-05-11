@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm traditional church palette - default */
+    /* Methi Cathedral PEFA — warm gold & deep cream */
+    --background: 43 76% 97%;          /* warm-white #FDF9F0 */
+    --foreground: 38 63% 11%;          /* text #2C1F0A */
+
+    --card: 0 0% 100%;
+    --card-foreground: 38 63% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 38 63% 11%;
+
+    --primary: 32 50% 7%;              /* deep #1A1209 */
+    --primary-foreground: 43 67% 95%;  /* cream #FAF5EA */
+    --primary-glow: 38 63% 11%;
+
+    --secondary: 43 67% 95%;           /* cream */
+    --secondary-foreground: 38 63% 11%;
+
+    --muted: 43 67% 95%;
+    --muted-foreground: 36 38% 30%;    /* text-light #6B5230 */
+
+    --accent: 44 55% 54%;              /* gold #C9A84C */
+    --accent-foreground: 32 50% 7%;
+    --accent-glow: 43 71% 70%;         /* gold-light #E8C97A */
+
+    --destructive: 0 50% 36%;          /* accent #8B2E2E */
+    --destructive-foreground: 43 67% 95%;
+
+    --border: 44 30% 80%;
+    --input: 44 30% 82%;
+    --ring: 44 55% 54%;
+
+    --radius: 0.375rem;
+
+    --gradient-hero: linear-gradient(to right, hsl(32 50% 7% / 0.92) 35%, hsl(32 50% 7% / 0.55));
+    --gradient-gold: linear-gradient(135deg, hsl(43 55% 39%), hsl(44 55% 54%) 50%, hsl(43 71% 70%));
+    --gradient-burgundy: linear-gradient(135deg, hsl(32 50% 7%), hsl(38 63% 11%));
+    --gradient-soft: linear-gradient(180deg, hsl(43 76% 97%), hsl(43 67% 95%));
+
+    --shadow-elegant: 0 12px 48px rgba(0,0,0,0.14);
+    --shadow-gold: 0 10px 30px -10px hsl(44 55% 54% / 0.5);
+    --shadow-soft: 0 6px 30px rgba(0,0,0,0.10);
+
+    --transition-smooth: all 0.25s ease;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Crimson Pro', Georgia, serif;
+    --font-sans: 'Montserrat', system-ui, sans-serif;
+  }
+
+  /* Christmas: deep green + gold + crimson */
+  [data-season="christmas"] {
+    --background: 30 25% 96%;
+    --primary: 145 50% 22%;
+    --primary-glow: 145 45% 35%;
+    --accent: 45 75% 55%;
+    --accent-glow: 0 65% 50%;
+    --ring: 145 50% 22%;
+    --gradient-burgundy: linear-gradient(135deg, hsl(145 50% 22%), hsl(0 60% 38%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 75% 55%), hsl(45 85% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(145 55% 12% / 0.85), hsl(0 50% 15% / 0.7));
+  }
+
+  /* Easter: white/lily + soft gold + lavender */
+  [data-season="easter"] {
+    --background: 50 40% 97%;
+    --primary: 270 40% 38%;
+    --primary-glow: 270 45% 55%;
+    --accent: 48 75% 60%;
+    --ring: 270 40% 38%;
+    --gradient-burgundy: linear-gradient(135deg, hsl(270 40% 38%), hsl(280 50% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 40% 25% / 0.8), hsl(48 60% 30% / 0.6));
+  }
+
+  /* Lent: muted purple, ash, restrained */
+  [data-season="lent"] {
+    --background: 30 12% 92%;
+    --primary: 280 25% 28%;
+    --primary-glow: 280 25% 42%;
+    --accent: 30 20% 45%;
+    --ring: 280 25% 28%;
+    --gradient-burgundy: linear-gradient(135deg, hsl(280 25% 22%), hsl(280 20% 38%));
+    --gradient-hero: linear-gradient(135deg, hsl(280 25% 15% / 0.85), hsl(30 15% 15% / 0.75));
+  }
+
+  /* Pentecost: fiery red/orange */
+  [data-season="pentecost"] {
+    --background: 30 40% 96%;
+    --primary: 12 70% 38%;
+    --primary-glow: 18 80% 52%;
+    --accent: 35 90% 55%;
+    --ring: 12 70% 38%;
+    --gradient-burgundy: linear-gradient(135deg, hsl(12 70% 38%), hsl(18 80% 52%));
+    --gradient-hero: linear-gradient(135deg, hsl(12 70% 18% / 0.85), hsl(35 70% 25% / 0.65));
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-gradient-burgundy { background: var(--gradient-burgundy); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-soft { background: var(--gradient-soft); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .transition-smooth { transition: var(--transition-smooth); }
+
+  .faith-scroll {
+    mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  }
+  @keyframes scroll-y {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+  }
+  .animate-scroll-y { animation: scroll-y 60s linear infinite; }
+  .animate-scroll-y:hover { animation-play-state: paused; }
+}
