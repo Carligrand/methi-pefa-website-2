@@ -32,7 +32,7 @@ const HistoryPage = () => {
             <ArrowLeft className="w-4 h-4" /> Back Home
           </Link>
           <p className="text-sm uppercase tracking-[0.3em] text-accent font-semibold mb-3">A Legacy of Faith</p>
-          <h1 className="font-display text-4xl md:text-6xl mb-4">The Story of Methi PEFA</h1>
+          <h1 className="font-display text-4xl md:text-6xl mb-4">The Story of PEFA Methi Cathedral Branch</h1>
           <p className="text-primary-foreground/85 max-w-2xl leading-relaxed">
             From a small gathering under a tree to a vibrant multi-generational congregation —
             this is the unfolding story of God's faithfulness through the years.

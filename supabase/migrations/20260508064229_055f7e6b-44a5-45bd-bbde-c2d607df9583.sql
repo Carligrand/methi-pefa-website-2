@@ -99,7 +99,7 @@ CREATE TRIGGER trg_site_settings_updated BEFORE UPDATE ON public.site_settings F
 CREATE TABLE public.bishop_profile (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   name text NOT NULL DEFAULT 'Bishop David G. Nduati',
-  title text NOT NULL DEFAULT 'Senior Pastor · Methi PEFA',
+  title text NOT NULL DEFAULT 'Senior Pastor · PEFA Methi Cathedral Branch',
   photo_url text,
   bio text,
   schedule jsonb NOT NULL DEFAULT '[]'::jsonb,
@@ -229,7 +229,7 @@ VALUES ('000000', 'METHIPEFA', 'info@methipefa.org');
 
 INSERT INTO public.bishop_profile (bio, phone, email, verse, verse_reference, schedule)
 VALUES (
-  'Shepherding Methi PEFA with grace and the Word, Bishop Nduati carries a heart for revival, family, and the next generation.',
+  'Shepherding PEFA Methi Cathedral Branch with grace and the Word, Bishop Nduati carries a heart for revival, family, and the next generation.',
   '+254 000 000 000',
   'bishop@methipefa.org',
   'For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.',

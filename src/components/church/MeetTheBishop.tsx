@@ -28,9 +28,9 @@ export const MeetTheBishop = () => (
         </div>
         <div>
           <h3 className="font-display text-3xl text-primary mb-2">Bishop David G. Nduati</h3>
-          <p className="text-accent uppercase tracking-widest text-xs font-semibold mb-5">Senior Pastor · Methi PEFA</p>
+          <p className="text-accent uppercase tracking-widest text-xs font-semibold mb-5">Senior Pastor · PEFA Methi Cathedral Branch</p>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Shepherding Methi PEFA with grace and the Word, Bishop Nduati carries a heart for revival, family,
+            Shepherding PEFA Methi Cathedral Branch with grace and the Word, Bishop Nduati carries a heart for revival, family,
             and the next generation. Here is when you'll find him in church each week:
           </p>
           <ul className="space-y-3 mb-8">

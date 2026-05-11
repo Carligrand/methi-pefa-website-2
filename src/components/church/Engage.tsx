@@ -4,7 +4,7 @@ const blocks = [
   { icon: HandHeart, title: "Volunteer", body: "Serve in worship, ushering, media, hospitality, children's ministry and outreach. Your gifts have a home here." },
   { icon: UsersRound, title: "Community Groups", body: "Small groups gathering across Methi for Bible study, prayer, and friendship throughout the week." },
   { icon: BookMarked, title: "How to Read the Bible", body: "New to Scripture? Start with the Gospel of John, then Psalms. We have reading plans, mentors, and study guides." },
-  { icon: PenLine, title: "Blog & Teaching", body: "Sermons, teaching notes, and reflections from the pulpit and pews of Methi PEFA." },
+  { icon: PenLine, title: "Blog & Teaching", body: "Sermons, teaching notes, and reflections from the pulpit and pews of PEFA Methi Cathedral Branch." },
 ];
 
 export const Engage = () => (

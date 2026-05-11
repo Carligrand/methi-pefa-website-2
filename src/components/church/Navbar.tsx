@@ -24,7 +24,7 @@ export const Navbar = ({ season }: { season: string }) => {
             <Cross className="w-5 h-5 text-primary-foreground" />
           </div>
           <div className="leading-tight">
-            <div className="font-display text-lg font-semibold text-primary">Methi PEFA</div>
+            <div className="font-display text-lg font-semibold text-primary">PEFA Methi Cathedral Branch</div>
             <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Church · {season}</div>
           </div>
         </a>

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const PAYBILL = "123456";
-const ACCOUNT = "METHI PEFA";
+const ACCOUNT = "PEFA Methi Cathedral Branch";
 
 export const Donate = () => {
   const copy = (v: string, label: string) => {

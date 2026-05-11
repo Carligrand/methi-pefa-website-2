@@ -44,7 +44,7 @@ export const AdminLayout = () => {
           <div className="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center">
             <Cross className="w-4 h-4 text-primary" />
           </div>
-          <div className="font-display text-base">Methi PEFA Admin</div>
+          <div className="font-display text-base">PEFA Methi Cathedral Branch Admin</div>
         </Link>
         <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
           {nav.map((n) => (
@@ -97,7 +97,7 @@ export const AdminLayout = () => {
       </aside>
       <main className="flex-1 overflow-auto">
         <div className="md:hidden flex items-center justify-between p-4 border-b border-border bg-primary text-primary-foreground">
-          <div className="font-display">Methi PEFA Admin</div>
+          <div className="font-display">PEFA Methi Cathedral Branch Admin</div>
           <button onClick={signOut} className="text-xs">Sign out</button>
         </div>
         <div className="p-6 md:p-10 max-w-5xl">

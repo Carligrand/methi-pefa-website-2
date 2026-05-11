@@ -28,7 +28,7 @@ const Dashboard = () => {
   return (
     <div>
       <h1 className="font-display text-3xl text-primary mb-2">Welcome back</h1>
-      <p className="text-muted-foreground mb-8">Manage every part of the Methi PEFA website from here.</p>
+      <p className="text-muted-foreground mb-8">Manage every part of the PEFA Methi Cathedral Branch website from here.</p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {cards.map((c) => (
           <div key={c.label} className="p-5 rounded-xl bg-card border border-border shadow-soft">

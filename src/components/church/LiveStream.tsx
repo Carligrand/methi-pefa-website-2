@@ -21,7 +21,7 @@ export const LiveStream = () => (
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/live_stream?channel=UCYO_jab_esuFRV4b17AJtAw"
-                title="Methi PEFA YouTube Live"
+                title="PEFA Methi Cathedral Branch YouTube Live"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -30,7 +30,7 @@ export const LiveStream = () => (
               <iframe
                 className="w-full h-full"
                 src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F10153231379946729%2F&show_text=false"
-                title="Methi PEFA Facebook Live"
+                title="PEFA Methi Cathedral Branch Facebook Live"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 allowFullScreen
               />
