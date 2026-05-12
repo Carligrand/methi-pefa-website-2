@@ -41,7 +41,7 @@ CREATE POLICY "IT admins can delete roles" ON public.user_roles
   FOR DELETE TO authenticated USING (public.has_role(auth.uid(), 'it_admin'));
 
 -- Profiles for showing email/name in admin
-CREATE TABLE public.profiles (
+CREATE TABLE IF NOT EXISTS public.profiles (
   id uuid PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   email text,
   full_name text,
