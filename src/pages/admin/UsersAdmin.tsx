@@ -20,9 +20,10 @@ const UsersAdmin = () => {
       supabase.from("profiles").select("*"),
       supabase.from("user_roles").select("*"),
     ]);
-    setProfiles((p as any) ?? []);
-    setRoles((r as any) ?? []);
-  };
+    // Replace lines 23 and 24 with this:
+    setProfiles((p as Profile[]) ?? []);
+    setRoles((r as RoleRow[]) ?? []);
+    };
   useEffect(() => { if (isITAdmin) load(); }, [isITAdmin]);
 
   if (loading) return <p>Loading…</p>;

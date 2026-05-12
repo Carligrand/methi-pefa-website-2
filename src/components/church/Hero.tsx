@@ -29,7 +29,7 @@ export const Hero = () => (
         <div className="text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-accent mb-4 font-medium">Welcome Home</p>
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] mb-5">
-            Methi <span className="text-gradient-gold">PEFA</span> Church
+          PEFA Methi <span className="text-gradient-gold">PEFA</span> CATHEDRAL BRANCH
           </h1>
           <p className="text-base md:text-lg text-primary-foreground/85 max-w-xl mx-auto leading-relaxed">
             A place of worship, fellowship, and grace. Wherever you are on your journey of faith, there is a seat for you here.
