@@ -193,7 +193,8 @@ CREATE TRIGGER trg_ministries_updated BEFORE UPDATE ON public.ministries FOR EAC
 -- ministry_events
 CREATE TABLE IF NOT EXISTS public.ministry_events (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  ministry_id text NOT NULL REFERENCES public.ministries(id) ON DELETE CASCADE,
+  -- CHANGED FROM uuid TO text TO MATCH ministries(id)
+  ministry_id text NOT NULL REFERENCES public.ministries(id) ON DELETE CASCADE, 
   title text NOT NULL,
   event_date date NOT NULL,
   description text,
@@ -201,9 +202,13 @@ CREATE TABLE IF NOT EXISTS public.ministry_events (
   updated_at timestamptz NOT NULL DEFAULT now()
 );
 ALTER TABLE public.ministry_events ENABLE ROW LEVEL SECURITY;
-DROP TRIGGER IF EXISTS trg_ministry_events_updated ON public.ministry_events;
-CREATE TRIGGER trg_ministry_events_updated BEFORE UPDATE ON public.ministry_events FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
 
+-- Don't forget the trigger for updated_at!
+DROP TRIGGER IF EXISTS trg_ministry_events_updated ON public.ministry_events;
+CREATE TRIGGER trg_ministry_events_updated 
+  BEFORE UPDATE ON public.ministry_events 
+  FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
+  
 -- ministry_gallery
 CREATE TABLE IF NOT EXISTS public.ministry_gallery (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
